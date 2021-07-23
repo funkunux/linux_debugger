@@ -4,3 +4,4 @@ if [ ! -d "build/" ];then
 fi
 g++ -Wall -W -Os -Ilinenoise -Iinclude src/main.cpp src/debugger.cpp src/breakpoint.cpp src/ptrace_wrapper.cpp lib/third_party/liblinenoise.a -o build/fdb
 g++ -g demos/demo.cpp -o build/demo
+gcc -g demos/simple_demo.c -o build/simple_demo
